@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GPU Store</title>
+	<!--font awesome cdn-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+
+	<!--custom css-->
+	<link rel="stylesheet" href="css/main.css">
+	<!--bootstrap css-->
+	<link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist\css\bootstrap.min.css">
+</head>
+
+<body>
+  
+ 
+      <h1 id="logo"><a href="#" class="logo__link">GPU Store </a></h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+          <a class="navbar-brand d-flex justify-content-between align-items-center" href="index.html">
+            <img src="images/gpu_logo.png" alt="site icon">
+            <span class="text-uppercase ms-2">GPU STORE</span>
+          </a>
+          <div class="order-lg-2 nav-btns d-flex justify-content-center align-items-center">
+            <button type="button" class="nav__item nav__item--cart position-relative">
+              <i class="fa fa-shopping-cart"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">6</span>
+
+            </button>
+            <button type="button" class="btn position-relative">
+              <i class="fa fa-heart"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">6</span>
+            </button>
+            <button type="button" class="btn position-relative">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+          
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+            <ul class="navbar-nav mx-auto text-center">
+              <li class="nav-item px-2 py-2">
+                <a class="nav-link text-uppercase text-dark" href="#header">Home</a>
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a class="nav-link text-uppercase text-dark" href="#catalogo" data-offset="20">Catalogo</a>
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a class="nav-link text-uppercase text-dark" href="#special">Special Edition</a>
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a class="nav-link text-uppercase text-dark" href="#tutoriales">Tutoriales</a>
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a class="nav-link text-uppercase text-dark" href="#about">Nosotros</a>
+                
+              </li>
+              <li class="nav-item px-2 py-2 border-0">
+                <a class="nav-link text-uppercase text-dark" href="#popular">Mas vendido</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>d
+      <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top: 180px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+          <div class="text-center carousel-item active">
+            <h2 class="text-uppercase text-white">mejores gpus</h2>
+            <h1 class="text-uppercase py-2 fw-bold text-white">Recien llegadas</h1>
+            <a href="#special" class="btn mt-3 text-uppercase text-white">Compra ahora</a>
+          </div>
+        <div class="text-center carousel-item">
+            <h2 class="text-uppercase text-white">Conoce la RTX4090</h2>
+            <h1 class="text-uppercase py-2 fw-bold text-white">Maximo poder</h1>
+            <a href="#special" class="btn mt-3 text-uppercase text-white">Comprar</a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button"
+        data-bs-target="#header" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button"
+        data-bs-target="#header" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </header>
+  
+    <section id="popular" class="gpus animate-left">
+      <h3 class="gpus__heading">Más vendido</h3>
+      <div class="gpus__products-grid">
+        <div class="gpus__products">
+          <img src="./img/rtx4090.png" alt="RTX 4090">
+          <div class="special-flavour__content-details">
+            <h4 class="gpus__product-name">RTX 4090</h4>
+            <p class="gpus__product-price"><span class="gpus__product--oldprice">$1.739.990</span>
+              $1.499.990</p>
+            <button class="add-to-cart cartBtn" data-title="RTX 4090" data-price="1499990"
+              data-img="./img/rtx4090.png" data-quantity=1>Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="gpus__products">
+          <img src="./img/rtx4070ti.png" alt="RTX 4070Ti">
+          <div class="special-flavour__content-details">
+            <h4 class="gpus__product-name">RTX 4070Ti</h4>
+            <p class="gpus__product-price"><span class="gpus__product--oldprice">$1.429.990</span>
+              $1.219.990</p>
+            <button class="add-to-cart cartBtn" data-title="RTX 4070Ti" data-price="1219990"
+              data-img="./img/rtx4070ti.png" data-quantity=1>Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="gpus__products">
+          <img src="./img/radeonrx7900.png" alt="Radeon RX 7900 XTX">
+          <div class="special-flavour__content-details">
+            <h4 class="gpus__product-name">Radeon RX 7900 XTX</h4>
+            <p class="gpus__product-price"><span>$1.089.990</span> $899.990</p>
+            <button class="add-to-cart cartBtn" data-title="Radeon RX 7900 XTX" data-price="899990"
+              data-img="./img/radeonrx7900.png" data-quantity=1>Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="special" class="featured-products-wrapper">
+      <div class="featured-products animate-right">
+        <img src="./img/4090big.png" alt="RTX 4090">
+        <h4>RTX 4090</h4>
+        <p>La NVIDIA® GeForce RTX™ 4090 es la GPU GeForce definitiva. Ofrece un salto enorme en rendimiento, eficiencia y gráficos impulsados por IA. Experimenta juegos de ultra alto rendimiento, mundos virtuales increíblemente detallados, productividad sin precedentes y nuevas formas de crear. Está impulsada por la arquitectura NVIDIA Ada Lovelace y viene con 24 GB de memoria G6X para ofrecer la experiencia definitiva para jugadores y creadores.
+          
+        </p>
+        <button class="add-to-cart-featured cartBtn" data-title="RTX 4090" data-price="1499990"
+          data-img="./img/4090big.png" data-quantity=1>Agregar al carrito</button>
+      </div>
+      <div class="featured-products animate-left">
+        <img src="./img/4070big.png" alt="RTX 4070Ti">
+        <h4>RTX 4070Ti</h4>
+        <p>Prepárate para jugar y crear de forma estelar con NVIDIA® GeForce RTX™ 4070 Ti y RTX 4070. Se diseñó con la arquitectura NVIDIA Ada Lovelace ultraeficiente. Experimenta el ray tracing rápido, el rendimiento acelerado por IA con DLSS 3, nuevas formas de crear y mucho más.
+        </p>
+        <button class="add-to-cart-featured cartBtn" data-title="RTX 4070Ti" data-price="1499990"
+          data-img="./img/4070big.png" data-quantity=1>Agregar al carrito</button>
+      </div>
+      <div class="featured-products animate-right">
+        <img src="./img/radeonbig.png" alt="RX 7900 XTX">
+        <h4>Radeon RX 7900 XTX</h4>
+        <p>La gráfica más avanzada para jugadores y creadores. Construida sobre la revolucionaria arquitectura AMD RDNA™ 3 con tecnología de chiplets, la AMD Radeon™ RX 7900 XTX ofrece un rendimiento, visualización y eficiencia de próxima generación a resoluciones 4K y más allá.
+        </p>
+        <button class="add-to-cart-featured cartBtn" data-title="RX 7900 XTX" data-price="1499990"
+          data-img="./img/adeonbig.png" data-quantity=1>Agregar al carrito</button>
+      </div>
+    </section>
+    <section id="catalogo" class="gpus animate-left">
+      <h3 class="gpus__heading">Crea o Juega como un PRO!</h3>
+      <div class="gpus__products-grid gpus__catalogox">
+        <div class="gpus__products">
+          <img src="./img/iloud.png" alt="Parlantes Profesionales" loading="lazy">
+          <div class="special-flavour__content-details">
+            <h4 class="gpus__product-name" style="margin-left: -40px;">Parlantes Profesionales</h4>
+            <p class="gpus__product-price" style="margin-left: -40px;"><span></span> $300.000</p>
+            <button class="add-to-cart cartBtn" data-title="Parlantes Profesionales" data-price="300000"
+              data-img="./img/iloud.png" data-quantity=1 style="margin-left: -40px;">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="gpus__products">
+          <img src="./img/razeer.png" alt="Mouse Razer " loading="lazy">
+          <div class="special-flavour__content-details">
+            <h4 class="gpus__product-name" style="margin-left: -40px;">Mouse Razer 
+              Viper Ultimate</h4>
+            <p class="gpus__product-price" style="margin-left: -40px;"><span></span> $49.990</p>
+            <button class="add-to-cart cartBtn" data-title="Mouse Razer " data-price="49990"
+              data-img="./img/razeer.png" data-quantity=1 style="margin-left: -40px;">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="gpus__products">
+          <img src="./img/tecladologi.png" alt="Teclado Gamer Logitech G213" loading="lazy">
+          <div class="special-flavour__content-details">
+            <h4 class="gpus__product-name" style="margin-left: -40px;" >Teclado Gamer Logitech G213</h4>
+            <p class="gpus__product-price"style="margin-left: -40px;"><span></span> $44.990</p>
+            <button class="add-to-cart cartBtn" data-title="Teclado Gamer Logitech G213" data-price="44990" data-img="./img/tecladologi.png"
+              data-quantity=1 style="margin-left: -40px;">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="why-us animate-bottom">
+      <h3 class="gpus__heading why-us__heading">Elije GPU Store</h3>
+      <div class="why-us__reasons-wrapper">
+        <div class="why-us__reasons">
+          <img src="./img/pickup.svg" alt="" loading="lazy">
+          <p>Delivery Seguro</p>
+        </div>
+        <div class="why-us__reasons">
+          <img src="./img/box.svg" alt="" loading="lazy">
+          <p>Cuidado de tu paquete</p>
+        </div>
+        <div class="why-us__reasons">
+          <img src="./img/timer.svg" alt="" loading="lazy">
+          <p>Justo a Tiempo</p>
+        </div>
+      </div>
+    </section>
+    <section class="checkout-cart-wrapper">
+      <div class="checkout-cart">
+        <button class="close-cart"><i class="fas fa-times"></i></button>
+        <h6 class="gpus__heading">Carrito de Compras </h6>
+        <div class="cart-products-wrapper">
+
+        </div>
+        <div class="buy-wrapper">
+          <p class="cost-wrapper">Total: $<span id="total-cost">0</span></p><button class="buy-button">COMPRAR</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="company-info">
+      <h5>GPU STORE</h5>
+      <p class="address">Maipu 1554,<br>
+        Concepcion, Región del Bío-Bío, <br>
+        223, Chile</p>
+      <p class="me">Construido por Pablo y Antonio © DUOC 2023</p>
+    </div>
+    <div class="contact" id="contact">
+      <h5>Contacto</h5>
+      <div class="contact-links">
+        <a href="https://github.com/pableks" title="Twitter" target="_blank"><i class="fab fa-twitter icon"></i></a>
+        <a href="https://github.com/pableks" title="Github" target="_blank"><i class="fab fa-github icon"></i></a>
+        <a href="https://github.com/pableks" title="Codepen" target="_blank"><i class="fab fa-codepen"></i></a>
+        <a href="https://github.com/pableks" title="Instagram" target="_blank"><i
+            class="fab fa-instagram icon"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+	<!--jquery-->
+	<script src="js/jquery-3.6.4.js"></script>
+
+	<!-- boostrap js-->
+	<script src="bootstrap-5.3.0-alpha3-dist\js\bootstrap.min.js"></script>
+
+  <script src="./js/script.js"></script>
+  <!-- Font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+</body>
+
+</html>
